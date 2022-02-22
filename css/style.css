@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+body {
+  background-color: #ebf6fc;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #24457b;
+}
+.mb18 {
+  margin-bottom: 18px !important;
+}
+h1 {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 2px;
+  padding: 81px 0 30px;
+  margin: 0;
+}
+@media (min-width: 360px) {
+  h1 {
+    font-size: 37px;
+  }
+}
+.txt-center {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 740px) {
+  .container {
+    padding: 0;
+  }
+}
+.subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  padding: 0 0 21px 0;
+  margin: 0;
+  border-bottom: 1px solid #000;
+}
+form {
+  padding: 47px 0 80px 0;
+}
+form h2 {
+  display: inline-block;
+  font-weight: 300;
+  line-height: 0.8;
+  margin: 40px 0 35px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #24457b;
+}
+form p {
+  font-size: 19px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+form p span {
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+  vertical-align: top;
+}
+form input[type="radio"] {
+  display: none;
+}
+form input[type="radio"]:checked + label:after {
+  content: "";
+}
+form .form-label {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 1;
+  margin: 0;
+  padding: 0 0 9px 0;
+}
+form .form-label span {
+  color: red;
+  font-size: 15px;
+  vertical-align: top;
+}
+form input.form-control {
+  height: 59px;
+  border-color: #000;
+  background-color: #f4fafd;
+  margin-bottom: 33px;
+}
+form input.form-control::-webkit-input-placeholder {
+  color: #24457b;
+  font-size: 19px;
+  font-weight: 100;
+}
+form input.form-control:-moz-placeholder {
+  color: #24457b;
+  font-size: 19px;
+  font-weight: 100;
+}
+form .form-group {
+  margin-bottom: 33px;
+}
+form .input-group-addon {
+  background-size: 24px;
+  padding: 0 28px;
+  border: 1px solid #000;
+  border-left: 0;
+}
+form .date .form-control {
+  border-right: 0;
+}
+form .date .input-group-addon {
+  background: url(../img/calendar.png) no-repeat center center #f4fafd;
+  background-size: 25px;
+}
+form .dateTime .input-group-addon {
+  background: url(../img/clock.png) no-repeat center center #f4fafd;
+  background-size: 25px;
+}
+form .detail-text {
+  font-weight: 100;
+  color: #000;
+  display: block;
+  margin-top: -25px;
+  margin-bottom: 31px;
+}
+form .send-button {
+  color: #fff;
+  background-color: #24457b;
+  border: 2px solid #24457b;
+  font-size: 20px;
+  padding: 12px 49px;
+  border-radius: 32px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+form .send-button:hover {
+  color: #24457b;
+  background-color: transparent;
+}
+form .send-button:disabled {
+  background-color: #ccc;
+  opacity: 0.5;
+}
+form .select {
+  position: relative;
+  height: 59px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background-color: #f4fafd;
+}
+form .select:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #b3b0b0;
+  position: absolute;
+  top: 24px;
+  right: 14px;
+  pointer-events: none;
+}
+form select.form-control {
+  height: 57px;
+  -webkit-appearance: none;
+  border: 0;
+  background-color: transparent;
+  color: #24457b;
+  font-size: 19px;
+  font-weight: 100;
+  cursor: pointer;
+}
+form .input {
+  position: relative;
+}
+form label.error {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  color: red;
+}
+.cakes__list {
+  margin-top: -10px;
+}
+@media (min-width: 500px) {
+  .cakes__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.cakes__item {
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  margin: 35px 0 0 0;
+}
+@media (min-width: 500px) {
+  .cakes__item {
+    width: calc((100% / 2) - 10px);
+  }
+}
+.cakes__item:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+}
+.cakes__item:after {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #24457b;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  margin-top: -8px;
+}
+.cakes__item img {
+  display: block;
+  width: 100%;
+}

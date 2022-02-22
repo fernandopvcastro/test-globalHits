@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Global Hits</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="container">
+                <h1>Cake Order Form</h1>
+                <p class="subtitle">
+                    Order your freshly baked cakes made using only the finest
+                    quality natural ingredients.
+                </p>
+
+                <form id="contactForm">
+                    <p>
+                        Please choose your favorite cake from among the
+                        following:<span>*</span>
+                    </p>
+                    <div class="cakes__list">
+                        <input
+                            type="radio"
+                            id="cake1"
+                            name="cake"
+                            value="Torta 1"
+                        />
+                        <label class="cakes__item" for="cake1">
+                            <img src="img/cake1.jpg" alt="Cake 1" />
+                            <span></span>
+                        </label>
+                        <input
+                            type="radio"
+                            id="cake2"
+                            name="cake"
+                            value="Torta 2"
+                        />
+                        <label class="cakes__item" for="cake2">
+                            <img src="img/cake2.jpg" alt="Cake 2" />
+                        </label>
+                        <input
+                            type="radio"
+                            id="cake3"
+                            name="cake"
+                            value="Torta 3"
+                        />
+                        <label class="cakes__item" for="cake3">
+                            <img src="img/cake3.jpg" alt="Cake 3" />
+                        </label>
+                        <input
+                            type="radio"
+                            id="cake4"
+                            name="cake"
+                            value="Torta 4"
+                        />
+                        <label class="cakes__item" for="cake4">
+                            <img src="img/cake4.jpg" alt="Cake 4" />
+                        </label>
+                    </div>
+
+                    <h2>Order information</h2>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label
+                                for="exampleFormControlInput1"
+                                class="form-label"
+                                >Name<span>*</span></label
+                            >
+                            <div class="input">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="firstName"
+                                    name="firstName"
+                                    placeholder="First"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label">&nbsp;</label>
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                class="form-control"
+                                placeholder="Last"
+                            />
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="form-label" for="dateText"
+                                    >Delivery date</label
+                                >
+                                <div
+                                    class="input-group date"
+                                    id="datetimepicker1"
+                                >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="dateText"
+                                        name="dateText"
+                                        placeholder="MM/DD/YYYY"
+                                        required
+                                    />
+                                    <span class="input-group-addon"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="timeText" class="form-label"
+                                    >Preferred delivery time</label
+                                >
+                                <div
+                                    class="input-group date dateTime"
+                                    id="datetimepicker2"
+                                >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="timeText"
+                                        name="timeText"
+                                        required
+                                    />
+                                    <span class="input-group-addon"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="phoneText" class="form-label"
+                                >Phone<span>*</span></label
+                            >
+                            <div class="input">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="phoneText"
+                                    name="phoneText"
+                                    placeholder="### ### ####"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="emailText" class="form-label"
+                                >Email<span>*</span></label
+                            >
+                            <div class="input">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    required
+                                />
+                                <span class="detail-text"
+                                    >To receive the complete receipt</span
+                                >
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="addressText" class="form-label"
+                                >Address</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control mb18"
+                                id="addressText"
+                                name="addressText"
+                                placeholder="Street Address"
+                            />
+                        </div>
+                        <div class="col-sm-12">
+                            <input
+                                type="text"
+                                class="form-control mb18"
+                                id="addressText2"
+                                name="addressText2"
+                                placeholder="Street Address Line 2"
+                            />
+                        </div>
+                        <div class="col-sm-6">
+                            <input
+                                type="text"
+                                class="form-control mb18"
+                                id="cityText"
+                                name="cityText"
+                                placeholder="City"
+                            />
+                        </div>
+                        <div class="col-sm-6">
+                            <input
+                                type="text"
+                                class="form-control mb18"
+                                id="regionText"
+                                name="regionText"
+                                placeholder="Region"
+                            />
+                        </div>
+                        <div class="col-sm-6">
+                            <input
+                                type="text"
+                                class="form-control mb18"
+                                id="postalText"
+                                name="postalText"
+                                placeholder="Postal / Zip Code"
+                            />
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="select mb18">
+                                <select id="pais" class="form-control">
+                                    <option selected>Country</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 txt-center">
+                            <input
+                                class="btn send-button"
+                                type="submit"
+                                value="Order"
+                            />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/moment-with-locales.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
